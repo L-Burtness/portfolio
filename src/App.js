@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import BarChart from './BarChart'
+import BarChart from './barChart'
 import WorldMap from './worldMap';
+import Tabs from 'react-bootstrap/Tabs';
+import Tab from 'react-bootstrap/Tab';
 
 class App extends Component {
   render() {
@@ -24,7 +26,20 @@ class App extends Component {
 
         <body className="App-body">
           {/* <BarChart/> */}
-          <WorldMap/>
+          {/* <WorldMap/> */}
+          <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
+            <Tab eventKey="about-me" title="About Me">
+              <div>
+                Hi
+              </div>
+            </Tab>
+            <Tab eventKey="projects" title="Projects">
+              Bye
+            </Tab>
+            <Tab eventKey="cool-links" title="Cool Links" disabled>
+              Lily
+            </Tab>
+          </Tabs>;
         </body>
       </div>
     );
