@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './navBar';
 import WorldMap from './worldMap';
+import Tabs from 'react-bootstrap/Tabs';
+import Tab from 'react-bootstrap/Tab';
 
 class App extends Component {
   render() {

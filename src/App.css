@@ -23,6 +23,16 @@
   color: #61dafb;
 }
 
+.nav-tabs {
+  font-size: 20px;
+  display: flex;
+  background-color: #61dafb;
+}
+
+.nav-item {
+  flex: 1
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
